@@ -1,4 +1,4 @@
-module MP_Themes
+module MPThemes
 
 using Plots
 
