@@ -1,5 +1,9 @@
-module MPThemes
+module MP_Themes
 
-# Write your package code here.
+using Plots
 
-end
+include("MPWong.jl")
+export my_theme
+
+
+end # module MP_Themes
