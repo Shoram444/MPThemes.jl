@@ -1,7 +1,7 @@
 
 """
-    my_theme()
-Description of ```my_theme```
+    my_wong()
+Description of ```my_wong```
 ------------------------------
 sets custom theme for Plots with the following attributes:
 
@@ -19,15 +19,15 @@ sets custom theme for Plots with the following attributes:
     
 
 Other methods: 
-    + my_theme(_size::Tuple{Int64, Int64})
-    + my_theme(_l::AbsoluteLength, _r::AbsoluteLength,_t::AbsoluteLength,_b::AbsoluteLength)
-    + my_theme(_legend::Symbol)
-    + my_theme(_size::Tuple{Int64, Int64} ,_l::AbsoluteLength, _r::AbsoluteLength,_t::AbsoluteLength,_b::AbsoluteLength)
-    + my_theme(_legend::Symbol ,_l::AbsoluteLength, _r::AbsoluteLength,_t::AbsoluteLength,_b::AbsoluteLength)
-    + my_theme(_legend::Symbol ,_size::Tuple{Int64, Int64})
-    + my_theme(_legend::Symbol, _size::Tuple{Int64, Int64} ,_l::AbsoluteLength, _r::AbsoluteLength,_t::AbsoluteLength,_b::AbsoluteLength)
+    + my_wong(_size::Tuple{Int64, Int64})
+    + my_wong(_l::AbsoluteLength, _r::AbsoluteLength,_t::AbsoluteLength,_b::AbsoluteLength)
+    + my_wong(_legend::Symbol)
+    + my_wong(_size::Tuple{Int64, Int64} ,_l::AbsoluteLength, _r::AbsoluteLength,_t::AbsoluteLength,_b::AbsoluteLength)
+    + my_wong(_legend::Symbol ,_l::AbsoluteLength, _r::AbsoluteLength,_t::AbsoluteLength,_b::AbsoluteLength)
+    + my_wong(_legend::Symbol ,_size::Tuple{Int64, Int64})
+    + my_wong(_legend::Symbol, _size::Tuple{Int64, Int64} ,_l::AbsoluteLength, _r::AbsoluteLength,_t::AbsoluteLength,_b::AbsoluteLength)
 """
-function my_theme()
+function my_wong()
     return Plots.theme(:wong2,
                         legend =:false,
                         left_margin = 6Plots.mm,
@@ -42,7 +42,7 @@ function my_theme()
                         )
 end
 
-function my_theme(_size::Tuple{Int64, Int64})
+function my_wong(_size::Tuple{Int64, Int64})
     return Plots.theme(:wong2,
                         legend =:false,
                         left_margin = 6Plots.mm,
@@ -57,7 +57,7 @@ function my_theme(_size::Tuple{Int64, Int64})
                         )
 end
 
-function my_theme(_l::Plots.Measures.Length{:mm, Float64}, _r::Plots.Measures.Length{:mm, Float64},_t::Plots.Measures.Length{:mm, Float64},_b::Plots.Measures.Length{:mm, Float64})
+function my_wong(_l::Plots.Measures.Length{:mm, Float64}, _r::Plots.Measures.Length{:mm, Float64},_t::Plots.Measures.Length{:mm, Float64},_b::Plots.Measures.Length{:mm, Float64})
     return Plots.theme(:wong2,
                         legend =:false,
                         left_margin = _l,
@@ -72,7 +72,7 @@ function my_theme(_l::Plots.Measures.Length{:mm, Float64}, _r::Plots.Measures.Le
                         )
 end
 
-function my_theme(_legend::Symbol)
+function my_wong(_legend::Symbol)
     return Plots.theme(:wong2,
                         legend =_legend,
                         left_margin = 6Plots.mm,
@@ -87,7 +87,7 @@ function my_theme(_legend::Symbol)
                         )
                     end
 
-function my_theme(_size::Tuple{Int64, Int64} ,_l::Plots.AbsoluteLength, _r::Plots.AbsoluteLength,_t::Plots.AbsoluteLength,_b::Plots.AbsoluteLength)
+function my_wong(_size::Tuple{Int64, Int64} ,_l::Plots.AbsoluteLength, _r::Plots.AbsoluteLength,_t::Plots.AbsoluteLength,_b::Plots.AbsoluteLength)
     return Plots.theme(:wong2,
                         legend =:false,
                         left_margin = _l,
@@ -102,7 +102,7 @@ function my_theme(_size::Tuple{Int64, Int64} ,_l::Plots.AbsoluteLength, _r::Plot
                         )
 end
 
-function my_theme(_legend::Symbol ,_l::Plots.AbsoluteLength, _r::Plots.AbsoluteLength,_t::Plots.AbsoluteLength,_b::Plots.AbsoluteLength)
+function my_wong(_legend::Symbol ,_l::Plots.AbsoluteLength, _r::Plots.AbsoluteLength,_t::Plots.AbsoluteLength,_b::Plots.AbsoluteLength)
     return Plots.theme(:wong2,
                         legend =_legend,
                         left_margin = 6Plots.mm,
@@ -117,7 +117,7 @@ function my_theme(_legend::Symbol ,_l::Plots.AbsoluteLength, _r::Plots.AbsoluteL
                         )
 end
 
-function my_theme(_legend::Symbol ,_size::Tuple{Int64, Int64})
+function my_wong(_legend::Symbol ,_size::Tuple{Int64, Int64})
     return Plots.theme(:wong2,
                         legend =_legend,
                         left_margin = 6Plots.mm,
@@ -132,7 +132,7 @@ function my_theme(_legend::Symbol ,_size::Tuple{Int64, Int64})
                         )
 end
 
-function my_theme(_legend::Symbol, _size::Tuple{Int64, Int64} ,_l::Plots.AbsoluteLength, _r::Plots.AbsoluteLength,_t::Plots.AbsoluteLength,_b::Plots.AbsoluteLength)
+function my_wong(_legend::Symbol, _size::Tuple{Int64, Int64} ,_l::Plots.AbsoluteLength, _r::Plots.AbsoluteLength,_t::Plots.AbsoluteLength,_b::Plots.AbsoluteLength)
     return Plots.theme(:wong2,
                         legend =_legend,
                         left_margin = _l,
