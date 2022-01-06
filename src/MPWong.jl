@@ -8,15 +8,19 @@ sets custom theme for Plots.
 
 + :wong2,
 + legend =:false,
-+ left_margin = 6Plots.mm,
-+ right_margin = 6Plots.mm,
-+ top_margin  = 4Plots.mm,
-+ bottom_margin  = 6Plots.mm,
++ left_margin = 8Plots.mm,
++ right_margin = 8Plots.mm,
++ top_margin  = 8Plots.mm,
++ bottom_margin  = 8Plots.mm,
 + framestyle = :box,
 + grid = :off,
-+ size = (800,400),
++ size = (1200,600),
 + dpi = 200,
 + color = "blue"
++ titlefontsize = 24
++ guidefontsize = 16
++ tickfontsize  = 16
++ legendfontsize= 16
 
 -------------------------------
     To change any of the default arguments, simply use the standard <keyword = value>
@@ -24,16 +28,21 @@ sets custom theme for Plots.
 """
 function  my_wong(;kwargs...)
     ## default values for the plotting style
-    plot_args = Dict(:legend       => :false,
-        :left_margin   => 6Plots.mm,
-        :right_margin  => 6Plots.mm,
-        :top_margin    => 4Plots.mm,
-        :bottom_margin => 6Plots.mm,
+    plot_args = Dict(
+        :legend       => :false,
+        :left_margin   => 8Plots.mm,
+        :right_margin  => 8Plots.mm,
+        :top_margin    => 8Plots.mm,
+        :bottom_margin => 8Plots.mm,
         :framestyle    => :box,
         :grid          => :off,
-        :size          => (800,400),
+        :size          => (1200,600),
         :dpi           => 200,
-        :color         => "blue"
+        :color         => "blue",
+        :titlefontsize => 24,
+        :guidefontsize => 16,
+        :tickfontsize  => 16,
+        :legendfontsize=> 16
         )
 
     ## checks if kwargs are provided
