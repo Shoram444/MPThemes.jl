@@ -42,7 +42,9 @@ function  my_wong(;kwargs...)
         :titlefontsize => 24,
         :guidefontsize => 16,
         :tickfontsize  => 16,
-        :legendfontsize=> 16
+        :legendfontsize=> 16,
+        :minorgrid     => :true,
+        :minorticks    => 10,
         )
 
     ## checks if kwargs are provided
