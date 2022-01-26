@@ -18,7 +18,6 @@ sets custom theme for Plots.
 + dpi = 200,
 + color = "blue"
 + titlefontsize = 24
-+ guidefontsize = 16
 + tickfontsize  = 16
 + legendfontsize= 16
 
