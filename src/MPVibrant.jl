@@ -36,11 +36,11 @@ function  my_vibrant(;kwargs...)
          :top_margin  => 8Plots.mm,
          :bottom_margin  => 8Plots.mm,
          :framestyle => :frame,
-         :size => (1200,600),
+         :size => (600,600),
          :dpi => 200,
-         :titlefontsize => 24
-         :tickfontsize  => 16
-         :legendfontsize=> 16
+        #  :titlefontsize => 24
+        #  :tickfontsize  => 16
+        #  :legendfontsize=> 16
          :formatter => :auto 
          :legend => :outertopright,
          :gridalpha => 0.05,
