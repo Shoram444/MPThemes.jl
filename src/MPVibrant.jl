@@ -15,6 +15,7 @@ sets custom theme for Plots.
 + size = (1200,600),
 + dpi = 200,
 + titlefontsize = 24
++ guidefontsize = 16
 + tickfontsize  = 16
 + legendfontsize= 16
 + formatter = :auto 
@@ -36,12 +37,13 @@ function  my_vibrant(;kwargs...)
          :top_margin  => 8Plots.mm,
          :bottom_margin  => 8Plots.mm,
          :framestyle => :frame,
-         :size => (600,600),
+         :size => (1200,600),
          :dpi => 200,
-        #  :titlefontsize => 24
-        #  :tickfontsize  => 16
-        #  :legendfontsize=> 16
-         :formatter => :auto 
+         :titlefontsize => 24,
+         :guidefontsize => 16,
+         :tickfontsize  => 16,
+         :legendfontsize=> 16,
+         :formatter => :auto ,
          :legend => :outertopright,
          :gridalpha => 0.05,
          :minorticks => :true,
